@@ -14,8 +14,25 @@ const headr = "<tr><th>Lordazzo</th><th>Data</th></tr>";
 var turno= new Array;
 var tableLordazzi = document.getElementById("tableLordazzi");
 
-
-
+function resetDB() {
+    var answ = confirm("Sei sicuro?");
+    if (answ) {
+        const resetData = { reset: true };
+        const options = {
+            method: 'POST',
+            headers:{
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify(resetData)
+        }
+        resetRequest();
+        
+        async function resetRequest(){
+            const response = await fetch('/resetRequest', options).then(showPanel(chosenTab));
+        }
+    }
+};
+  
 
 function getInfo() {
 

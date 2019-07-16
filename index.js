@@ -53,6 +53,34 @@ databaseTurniPiattiSantaLori.loadDatabase();
 const databaseTurniPiattiMauriLori = new Datastore({ filename: 'turniPiattiLoriMauriDatabase.db', autoload: true });
 databaseTurniPiattiMauriLori.loadDatabase();
 
+app.post('/resetRequest',  (request, response) => {
+    databaseTurniCucina.remove({}, { multi: true }, function (err, numRemoved) {
+        databaseTurniCucina.loadDatabase(function (err) {
+        });
+    });
+    databaseTurniCesso.remove({}, { multi: true }, function (err, numRemoved) {
+        databaseTurniCesso.loadDatabase(function (err) {
+        });
+    });
+    databaseTurniPiattiTrio.remove({}, { multi: true }, function (err, numRemoved) {
+        databaseTurniPiattiTrio.loadDatabase(function (err) {
+        });
+    });
+    databaseTurniPiattiSantaMauri.remove({}, { multi: true }, function (err, numRemoved) {
+        databaseTurniPiattiSantaMauri.loadDatabase(function (err) {
+        });
+    });
+    databaseTurniPiattiSantaLori.remove({}, { multi: true }, function (err, numRemoved) {
+        databaseTurniPiattiSantaLori.loadDatabase(function (err) {
+        });
+    });
+    databaseTurniPiattiMauriLori.remove({}, { multi: true }, function (err, numRemoved) {
+        databaseTurniPiattiMauriLori.loadDatabase(function (err) {
+        });
+    });
+})
+
+
 app.get('/getTurni0', (request, response) => {
     databaseTurniCucina.find({}).sort({timeStamp: 1}).exec((err, data) => {
         if (err) {
