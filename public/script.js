@@ -135,6 +135,7 @@ function showPanel(panelIndex) {
 function lavoIo (){
     var j = 0;
 
+    if (confirm("Sei sicuro di voler lavare?")) {
     const turno = {loggedNickname}
     const options = {
         method: 'POST',
@@ -149,8 +150,6 @@ function lavoIo (){
         const response = await fetch('/postTurni'+chosenTab, options);
     }
 
-    
-
-    alert(loggedUser+' lava alle '+ date.getHours()+':'+date.getMinutes()+' il '+date.getDate()+'-'+(date.getMonth()+1)+'-'+date.getFullYear());
     showPanel(chosenTab);
+    }
 }
