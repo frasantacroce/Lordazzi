@@ -1,6 +1,7 @@
 const express = require('express');
 const app = express();
 const Datastore = require('nedb');
+const fetch = require('fetch')
 require('dotenv').config();
 var loggedIn = false;
 const date = new Date();
