@@ -14,6 +14,10 @@ const headr = "<tr><th>Lordazzo</th><th>Data</th></tr>";
 var turno= new Array;
 var tableLordazzi = document.getElementById("tableLordazzi");
 
+function refreshDB() {
+    showPanel(chosenTab)
+}
+
 function resetDB() {
     var answ = confirm("Sei sicuro?");
     if (answ) {
