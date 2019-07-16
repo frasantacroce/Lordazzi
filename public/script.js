@@ -1,5 +1,5 @@
 var tabButton=document.querySelectorAll(".tabContainer .buttonContainer button");
-var tabPanel= document.querySelectorAll(".tabContainer .tabPanel");
+var tabPanel= document.querySelector(".tabContainer .tabPanel");
 var tableLordi=document.querySelector(".Maintable")
 var tableLogin=document.querySelector(".loginForm")
 var loggedUser;
@@ -89,8 +89,8 @@ function showPanel(panelIndex) {
     tabButton[panelIndex].style.backgroundColor=colorCode;
     tabButton[panelIndex].style.color="white";
     
-    tabPanel[0].style.display="block";
-    tabPanel[0].style.backgroundColor=colorCode;
+    tabPanel.style.display="block";
+    tabPanel.style.backgroundColor=colorCode;
     tableLordazzi.textContent = "";
     var row;
     var cell

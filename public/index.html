@@ -1,23 +1,24 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta charset="UTF-8">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Lordazzi</title>
-        
+        <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+
         <link rel="stylesheet" type="text/css" href="style.css">
     </head>
-    <body style="padding: 20px">
-        
+    <body>
         <h2 class="userLog" id="userLog"></h2>
-        <h1 class="title">Lordazzi</h1>
-        
         <div class="loginForm">
-                <input type="text" placeholder="username" id="username"><br>
-                <input type="password" placeholder="password" id="password"><br>
-                <button type="button" onclick="getInfo()">Submit</button>
+                <h1 class="title">Lordazzi</h1>
+                <input type="username" placeholder="username" id="username" style="background-color: rgb(216, 216, 216)"><br><br>
+                <input type="password" placeholder="password" id="password" style="background-color: rgb(216, 216, 216)"><br><br>
+                <button type="button" onclick="getInfo()" style="background-color: gray">Login</button>
         </div>
         <div class="Maintable">
             <div class="tabContainer">
+                <h1 class="title2">Lordazzi</h1>
                 <div class="buttonContainer">
                     <button onclick="showPanel(0)">Casa:<br>Cucina</button>
                     <button onclick="showPanel(1)">Casa:<br>Cesso</button>
@@ -31,8 +32,8 @@
                 <div class="chiLava">Tocca a: </div>
                 <div class="buttonContainer2" onclick="lavoIo()"><button>LAVO IO</button></div>
                 <div class="buttonReset" onclick="resetDB()"><button>
-                        Reset Database
-                        </button>    
+                  Reset Database
+                </button>    
             </div>
         </div>
         <script src="script.js"></script>
