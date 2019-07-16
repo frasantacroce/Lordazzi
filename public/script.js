@@ -28,7 +28,7 @@ function resetDB() {
         resetRequest();
         
         async function resetRequest(){
-            const response = await fetch('/resetRequest', options).then(showPanel(chosenTab));
+            const response = await fetch('/resetRequest'+chosenTab, options).then(showPanel(chosenTab));
         }
     }
 };

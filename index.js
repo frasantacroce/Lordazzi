@@ -53,32 +53,43 @@ databaseTurniPiattiSantaLori.loadDatabase();
 const databaseTurniPiattiMauriLori = new Datastore({ filename: 'turniPiattiLoriMauriDatabase.db', autoload: true });
 databaseTurniPiattiMauriLori.loadDatabase();
 
-app.post('/resetRequest',  (request, response) => {
+app.post('/resetRequest0',  (request, response) => {
     databaseTurniCucina.remove({}, { multi: true }, function (err, numRemoved) {
         databaseTurniCucina.loadDatabase(function (err) {
         });
     });
+});
+app.post('/resetRequest1',  (request, response) => {
+    
     databaseTurniCesso.remove({}, { multi: true }, function (err, numRemoved) {
         databaseTurniCesso.loadDatabase(function (err) {
         });
     });
+});
+app.post('/resetRequest2',  (request, response) => {
     databaseTurniPiattiTrio.remove({}, { multi: true }, function (err, numRemoved) {
         databaseTurniPiattiTrio.loadDatabase(function (err) {
         });
     });
+});
+app.post('/resetRequest3',  (request, response) => {
     databaseTurniPiattiSantaMauri.remove({}, { multi: true }, function (err, numRemoved) {
         databaseTurniPiattiSantaMauri.loadDatabase(function (err) {
         });
     });
+});
+app.post('/resetRequest4',  (request, response) => {
     databaseTurniPiattiSantaLori.remove({}, { multi: true }, function (err, numRemoved) {
         databaseTurniPiattiSantaLori.loadDatabase(function (err) {
         });
     });
+});
+app.post('/resetRequest5',  (request, response) => {
     databaseTurniPiattiMauriLori.remove({}, { multi: true }, function (err, numRemoved) {
         databaseTurniPiattiMauriLori.loadDatabase(function (err) {
         });
     });
-})
+});
 
 
 app.get('/getTurni0', (request, response) => {
