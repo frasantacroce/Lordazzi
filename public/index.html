@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Lordazzi</title>
+        
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body style="padding: 20px">
+        
+        <h2 class="userLog" id="userLog"></h2>
+        <h1 class="title">Lordazzi</h1>
+        
+        <div class="loginForm">
+                <input type="text" placeholder="username" id="username"><br>
+                <input type="password" placeholder="password" id="password"><br>
+                <button type="button" onclick="getInfo()">Submit</button>
+        </div>
+        <div class="Maintable">
+            <div class="tabContainer">
+                <div class="buttonContainer">
+                    <button onclick="showPanel(0)">Casa:<br>Cucina</button>
+                    <button onclick="showPanel(1)">Casa:<br>Cesso</button>
+                    <button onclick="showPanel(2)">Piatti:<br>Il Trio</button>
+                    <button onclick="showPanel(3)">Piatti:<br>Santa & Mauri</button>
+                    <button onclick="showPanel(4)">Piatti:<br>Santa & Lori</button>
+                    <button onclick="showPanel(5)">Piatti:<br>Lori & Mauri</button>
+                </div>
+                <div class ="tabPanel">
+                <table class="table table-striped" id="tableLordazzi"></table></div>
+                <div class="chiLava">Tocca a: </div>
+                <div class="buttonContainer2" onclick="lavoIo()"><button>LAVO IO</button></div>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+    
+    
+</html>

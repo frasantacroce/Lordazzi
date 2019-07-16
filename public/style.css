@@ -1,0 +1,84 @@
+.title {
+    font-family: sans-serif;
+    color: #dc2d5e;
+    text-align: center;
+}
+.userLog{
+    font-family: Times;
+    font-size:10px;
+    color: darkgrey;
+}
+.loginForm{
+    width: 100%;
+    text-align: center;
+    display: block;
+}
+
+.Maintable {
+    display: none;
+}
+.Maintable .tabContainer{
+    width: 100%;
+    height: 350px;
+}
+.Maintable .tabContainer .buttonContainer {
+    height: 15%;
+}
+.Maintable .tabContainer .buttonContainer button{
+    width: 16.6667%;
+    height: 100%;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-family: sans-serif;
+    font-size: 10px;
+    background-color: rgb(108, 192, 195);
+}
+.Maintable .tabContainer .buttonContainer button:hover {
+    background-color: cornflowerblue;
+}
+.Maintable .tabContainer .tabPanel {
+    height: 100%;
+    background-color: grey;
+    color: white;
+    text-align: center;
+    padding-top: 10%;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    font-size: 12px;
+    display: none;
+}
+.Maintable .tabContainer .tabPanel table{
+    box-align: center;
+    color: white;
+    border-collapse: collapse;
+    font-size: 18px;
+    width: 100%;
+    white-space: pre;
+}
+.Maintable .tabContainer .tabPanel table th{
+    padding: 4px 8px;
+    background-color: rgb(182, 182, 182);
+    border: 2px solid white;
+}
+
+.Maintable .tabContainer .tabPanel table td{
+    border: 1px solid white;
+}
+.Maintable .tabContainer .buttonContainer2{
+    height: 10%;
+    background-color: grey;
+    color: white;
+    text-align: center;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    font-size: 12px;
+}
+.Maintable .tabContainer .buttonContainer2 button{
+    height: 100%;
+    width: 100%;
+    background-color: deepskyblue;
+    border: none;
+    font-family: sans-serif;
+}
